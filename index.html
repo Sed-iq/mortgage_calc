@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortgage</title>
+  </head>
+  <body class="bg-white">
+    <div class="mt-10">
+      <p class="sm:text-3xl text-xl font-bold text-slate-800 px-10">
+        Affordabitlity Calculator
+      </p>
+    </div>
+    <div
+      id="calc"
+      class="sm:flex flex flex-col-reverse sm:flex-row-reverse sm:mx-10 sm:mt-10 mt-6 justify-around"
+    >
+      <div class="sm:w-1/2 p-2">
+        <p class="sm:text-2xl text-center text-xl font-bold">
+          You can afford a house up to
+        </p>
+        <p
+          id="answer"
+          class="text-center my-2 text-xl font-bold text-slate-700"
+        >
+          $0
+        </p>
+        <p class="text-center mt-2">
+          Based on the information you provided, a house at this price should
+          fit comfortably within your budget.
+        </p>
+        <!-- Animation -->
+        <div class="flex mt-10 justify-center">
+          <div class="w-full justify-between flex">
+            <img src="./piggy-bank.png" alt="" class="w-10" />
+            <img src="./house.png" alt="" class="w-10" />
+          </div>
+        </div>
+        <div class="w-full mt-4 justify-center">
+          <input type="range" class="w-full" value="100%" />
+        </div>
+      </div>
+      <div class="sm:w-2/5 flex justify-center w-full">
+        <form id="submit" action="">
+          <div class="w-full p-3">
+            <p class="text-sm font-bold">Annual Income</p>
+            <div class="my-2 flex rounded bg-gray-100 sm:w-1/2">
+              <p class="text-xl p-2">$</p>
+              <input
+                required
+                type="number"
+                class="p-2 text-base outline-none w-full text-slate-700 rounded bg-gray-100"
+              />
+            </div>
+          </div>
+
+          <div class="w-full p-3">
+            <p class="text-sm font-bold">Monthly Debts</p>
+            <div class="my-2 flex rounded bg-gray-100 sm:w-1/2">
+              <p class="text-xl p-2">$</p>
+              <input
+                required
+                type="number"
+                class="p-2 text-base outline-none w-full text-slate-700 rounded bg-gray-100"
+              />
+            </div>
+          </div>
+
+          <div class="w-full p-3">
+            <p class="text-sm font-bold">Down payment</p>
+            <div class="my-2 flex rounded bg-gray-100 sm:w-1/2">
+              <p class="text-xl p-2">$</p>
+              <input
+                required
+                type="number"
+                class="p-2 text-base outline-none w-full text-slate-700 rounded bg-gray-100"
+              />
+            </div>
+          </div>
+          <button></button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
